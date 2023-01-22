@@ -9,5 +9,6 @@ function testeVar(){
     if (typeof(nome) == "undefined"){
         console.log("Teste 2 - O nome não foi inicializado");
     }
-    console.log("O tipo do nome é %s e o tipo da soma é")
+    console.log("O tipo do nome é %s e o tipo da soma é %s", typeof(nome), typeof(soma));
+    console.log("Ola %s, o resultado da soma é: %d", nome , soma, "que", "legal");
 }

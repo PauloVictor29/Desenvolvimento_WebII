@@ -1,0 +1,16 @@
+//Carrega o modulo HTTP
+const http = require('http');
+
+//cria um servidor HTTP no qual envia uma msg
+var server = http.createServer(function (request,response){
+    //define o cabeçalho(header) com o tipo de resposta
+    response.writeHead(200, {"Content-type": text/plain});
+
+    //Mensagem de retorno
+    response.end("Ola Mundo Node!\n");
+})
+//porta que o servidor vai executar
+server.listen(3000);
+
+//Mensagem ao Inicar o servidor
+console.log("Servidor iniciado em http://localhost:3000/");
